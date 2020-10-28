@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class ResponseUtils {
 
-    public static <T> T unmarshall(CloseableHttpResponse httpResponse, Class<T> usersClass) throws IOException {
+    public static <T> T  unmarshall(CloseableHttpResponse httpResponse, Class<T> usersClass) throws IOException {
         String jSonBody = EntityUtils.toString(httpResponse.getEntity());
         return new ObjectMapper()
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
