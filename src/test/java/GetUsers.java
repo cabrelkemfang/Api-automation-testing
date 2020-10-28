@@ -57,7 +57,7 @@ public class GetUsers extends BaseClass {
     public void createNewUser() throws IOException {
         HttpPost httpPost = new HttpPost(TEST_BASE_ENDPOINT + "users");
 
-        //Define the Json
+        //+Define the Json
         NewUsers newUsers = new NewUsers();
         newUsers.setJob("devop");
         newUsers.setName("cabrel");
